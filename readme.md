@@ -39,5 +39,5 @@ wide_net = WideNet(
 ).cuda()
 
 x = torch.randn(2, 1024, inp_dim).cuda()
-output, total_aux_loss = switch_transformer(x)
+output, total_aux_loss = wide_net(x)
 ```
